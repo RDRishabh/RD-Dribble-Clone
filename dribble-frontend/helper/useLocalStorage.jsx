@@ -6,6 +6,7 @@ function useLocalStorage(key) {
         return savedData ? JSON.parse(savedData) : [];
     });
 
+    // Listen for changes to local storage
     useEffect(() => {
         const handleStorageChange = () => {
             const savedData = localStorage.getItem(key);
@@ -19,12 +20,14 @@ function useLocalStorage(key) {
         };
     }, [key]);
 
+    // Save data to local storage
     const saveData = (newData) => {
         const updatedData = [...data, newData.toUpperCase()];
         setData(updatedData);
         localStorage.setItem(key, JSON.stringify(updatedData));
     };
 
+    // Delete data from local storage
     const deleteData = (itemToRemove) => {
         const updatedData = data.filter(item => item !== itemToRemove.toUpperCase());
         setData(updatedData);

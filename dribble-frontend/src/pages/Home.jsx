@@ -4,10 +4,10 @@ import HeroSection from "../components/HeroSection.jsx";
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Navbar />
             <HeroSection />
-        </div>
+        </>
     );
 };
 

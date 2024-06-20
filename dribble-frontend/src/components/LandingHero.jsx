@@ -21,17 +21,17 @@ function LandingHero() {
                         <span>Over 3 million ready-to-work creatives!</span>
                     </div>
                 </div>
-                <div>
+                <>
                     <div class="flex mt-8 items-center justify-center ">
-                        <p class="text-[72px] font-source-serif">The world's destination </p><br />
+                        <p class="text-[72px] font-source-serif text-center">The world's destination </p>
                         
                     </div>
-                    <div class="flex -mt-4 items-center justify-center ">
-                        <p class="text-[72px] font-source-serif">for design</p>
+                    <div class="flex -mt-2 items-center justify-center ">
+                        <p class="text-[72px] font-source-serif text-center">for design</p>
                     </div>
-                </div>
+                </>
                 <div class="flex items-center justify-center m-4 text-[20px] font-semibold">
-                    <span>Get inspired by the work of millions of top-rated designers & agencies around the world.</span>
+                    <span class="text-center">Get inspired by the work of millions of top-rated designers & agencies around the world.</span>
                 </div>
                 <div class="flex justify-center items-center m-4 mt-12">
                     <a href="/Home">
