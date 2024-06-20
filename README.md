@@ -15,7 +15,7 @@ This project recreates the visual aspects and interactivity of Dribbble's landin
 
 ### Git Clone
 ```
-git clone <your-git-url>
+git clone https://github.com/RDRishabh/RD-Dribble-Clone.git
 ```
 
 ### Change Directory
