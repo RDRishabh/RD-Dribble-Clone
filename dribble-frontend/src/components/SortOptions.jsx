@@ -26,7 +26,7 @@ const SortOptions = ({handleClick}) => {
         >
             <div class="flex items-center justify-center">
                 <span class="text-sm">{selectedSort}</span>
-                <img src="/dropdown.png" alt="" class="h-2 w-2 ml-2 mt-1"/>
+                <img src="/png/dropdown.png" alt="" class="h-2 w-2 ml-2 mt-1"/>
             </div>
             <ul
                 ref={sortRef}
