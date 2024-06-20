@@ -5,6 +5,8 @@ const SortOptions = ({handleClick}) => {
     const sortRef = useRef(null);
     const [selectedSort, setSelectedSort] = React.useState("Popular");
 
+    // ByDefault the selected sort will be Popular
+    // This component will remove the visible class from the ul when we click outside the ul
     const handleOutsideClick = (event) => {
         if (sortRef.current && !sortRef.current.contains(event.target)) {
             setIsUlVisible(false);

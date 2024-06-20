@@ -5,6 +5,10 @@ const AutoComplete = ({ tags , changeTag }) => {
     const [filteredTags, setFilteredTags] = useState([]);
     const inputRef = useRef(null);
 
+    //tags is the list of tags which we will be using to filter the tags based on the input value
+    //changeTag is the function which will be called when we click on a tag from the list of tags
+
+    // This function will be called when we click on a tag from the list of tags
     const HandleChangeTag = (tag) =>{
         if(inputRef.current && inputRef.current.value){
             inputRef.current.value = "";
@@ -14,10 +18,11 @@ const AutoComplete = ({ tags , changeTag }) => {
         changeTag(tag)
     }
 
+    // This function will be called whenever we type in the input field to filter the tags based on the input value and display the filtered tags
     const handleInputChange = (e) => {
         const value = e.target.value;
         setInputValue(value);
-
+        
         if (value) {
             const filtered = tags
                 .filter(tag => tag.value.toLowerCase().includes(value.toLowerCase()))
@@ -28,6 +33,9 @@ const AutoComplete = ({ tags , changeTag }) => {
         }
     };
 
+    // We firstly have a input field where we can type the tag name
+    // We have a list of tags which will be displayed when we type in the input field and the tags will be filtered based on the input value
+    // When we click on a tag from the list, the tag will be selected and the input field will be cleared
     return (
         <div className={`relative w-full`}>
             <input

@@ -3,6 +3,9 @@ import React from 'react';
 const PortfolioCard = ({ portfolio  , handleLike , handleRemoveLike}) => {
   const { photo, author, authorIcon, likeButton, tags, portfolioName, save, stmember } = portfolio;
 
+  // This function will be called when we click on the like button
+  // The Props handleLike and handleRemoveLike are functions which work on the state of the save field of the portfolio
+  // These functions are passed from the parent component which in this case is HeroSection where it comes from the useLocalStorage hook
   const handleBtnPress = () =>{
       if(save){
           handleRemoveLike(portfolioName)
