@@ -1,14 +1,14 @@
 import React from 'react'
 import Carousal from './Carousal'
 import PortfolioCard from './PortfolioCard'
-import data from '../../Data/data.json'
-import useLocalStorage from '../../helper/useLocalStorage.jsx'
+// import data from '../../Data/data.json'
+// import useLocalStorage from '../../helper/useLocalStorage.jsx'
 
 
 function LandingHero() {
 
-    const [originalData, setOriginalData] = React.useState(data)
-    const [liked_Arr , save_like , delete_like ] = useLocalStorage("user_liked");
+    // const [originalData, setOriginalData] = React.useState(data)
+    // const [liked_Arr , save_like , delete_like ] = useLocalStorage("user_liked");
   return (
     <div>
         <div>
@@ -39,16 +39,16 @@ function LandingHero() {
             <Carousal />
         </div>
 
-        <div class="flex justify-center items-center">
+        {/* <div class="flex justify-center items-center">
             <span class="text-[42px]">Exploring inspiring designs</span>
-        </div>
-        <div className={`justify-center items-center px-10 py-10 flex flex-wrap gap-10 mt-4`}>
+        </div> */}
+        {/* <div className={`justify-center items-center px-10 py-10 flex flex-wrap gap-10 mt-4`}>
                 {
                     originalData.map((single)=>(
                         <PortfolioCard portfolio={single} key={`card_${single.portfolioName}`} handleLike={save_like} handleRemoveLike={delete_like} />
                     ))
                 }
-            </div>
+            </div> */}
     </div>
 
   )
