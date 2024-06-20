@@ -65,7 +65,7 @@ function HeroSection() {
         <div className="mx-auto  -translate-y-1/2 items-center justify-center mb-12">
             <div className="flex items-center shadow-lg rounded-lg max-w-xl mx-auto px-4 py-1 bg-white justify-between">
                 <div className="flex items-center pr-2 max-w-full w-96 z-20">
-                    <img src="../src/assets/search-icon.png" alt="" className="h-4 w-4"/>
+                    <img src="/png/search-icon.png" alt="" className="h-4 w-4"/>
 
                     <form action="/search" method="get" className="ml-2 flex-1 w-96">
                         <label htmlFor="search" className="sr-only">Search</label>
@@ -79,7 +79,7 @@ function HeroSection() {
                     <a href="#" className="flex items-center pr-3 text-gray-700 justify-between ml-4 space-x-8">
                         <span>{selectedSTMember}</span>
                         <div className="mt-1 ml-2">
-                            <img src="../src/assets/dropdown.png" alt="" className="h-2 w-2"/>
+                            <img src="/png/dropdown.png" alt="" className="h-2 w-2"/>
                         </div>
                     </a>
 

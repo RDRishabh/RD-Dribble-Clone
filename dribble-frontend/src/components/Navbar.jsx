@@ -8,7 +8,7 @@ function Navbar() {
                 <li className="relative group flex justify-between items-center">
                     <a href="/hiring" className="text-black p-2 rounded">Find Designers</a>
                     <div className="h-2 w-auto">
-                        <img src="../src/assets/dropdown.png" alt="dropdown" className="mt-0.5 h-full w-auto"/>
+                        <img src="/png/dropdown.png" alt="dropdown" className="mt-0.5 h-full w-auto"/>
                     </div>
                     <div>
                         <ul className="absolute left-0 hidden bg-white text-black mt-4 group-hover:block w-auto whitespace-nowrap shadow-lg rounded-custom-sm borderWidth-custom-thin p-2 border-2">
@@ -25,7 +25,7 @@ function Navbar() {
                 <li className="relative group flex  justify-between items-center">
                     <a href="/product-design" className="text-black p-2 rounded">Courses</a>
                     <div className="h-2 w-auto">
-                        <img src="../src/assets/dropdown.png" alt="dropdown" className="mt-0.5 h-full w-auto"/>
+                        <img src="/png/dropdown.png" alt="dropdown" className="mt-0.5 h-full w-auto"/>
                     </div>
                     <div>
                         <ul className="absolute left-0 hidden bg-white text-black mt-4 group-hover:block w-auto whitespace-nowrap shadow-lg  rounded-custom-sm borderWidth-custom-thin p-2 border-2">
@@ -50,7 +50,7 @@ function Navbar() {
 
         <div className="h-8 w-auto">
             <a href="/">
-                <img src="../src/assets/dribble-spell.png" alt="Dribble Image" className="h-full w-auto"/>
+                <img src="/png/dribble-spell.png" alt="Dribble Image" className="h-full w-auto"/>
             </a>
         </div>
 
@@ -58,7 +58,7 @@ function Navbar() {
         <div className="flex justify-between items-center space-x-4">
             <div className="relative">
                 <div className="absolute left-0 top-0 mt-4 ml-5">
-                    <img src="../src/assets/search-icon.png" alt="" className="h-4 w-4  text-gray-200"/>
+                    <img src="/png/search-icon.png" alt="" className="h-4 w-4  text-gray-200"/>
                 </div>
                 <input
                     type="text"
