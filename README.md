@@ -2,9 +2,13 @@
 
 ## Description
 This project recreates the visual aspects and interactivity of Dribbble's landing page. It includes features to:
-- View contents by popularity, newness, and net worthiness
+- View contents by popularity, newness, and net-worthiness
 - Filter by categories like Animation, Branding, etc.
 - Search by tags with reference images and a "like" button for each image
+
+## Project Deployment Link
+https://rd-dribble-clone.vercel.app/
+
 
 ## Project Pre-Requisites
 - Node.js
