@@ -1,26 +1,35 @@
-Project: Dribble Clone
-Description
-This project recreates the visual aspects and interactivity of Dribbble's landing page. It includes features to 
--> View contents by popularity, newness, and net worthiness
--> Filtering by categories like Animation, Branding, etc. 
--> Search by tags with reference images and a "like" button for each Image.
+# Project: Dribble Clone
 
-Project Pre-Requisites
-Node.js
-npm
-React framework
+## Description
+This project recreates the visual aspects and interactivity of Dribbble's landing page. It includes features to:
+- View contents by popularity, newness, and net worthiness
+- Filter by categories like Animation, Branding, etc.
+- Search by tags with reference images and a "like" button for each image
 
-How to Start
+## Project Pre-Requisites
+- Node.js
+- npm
+- React framework
 
-Git Clone
-git clone 
+## How to Start
 
-Change Directory
+### Git Clone
+```
+git clone <your-git-url>
+```
+
+### Change Directory
+```
 cd dribble-clone
+```
 
-Install Dependencies
+### Install Dependencies
+```
 npm install
 npm install:all
+```
 
-Run Development Server
+### Run Development Server
+```
 npm run dev
+```
