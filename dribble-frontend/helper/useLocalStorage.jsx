@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 function useLocalStorage(key) {
     const [data, setData] = useState(() => {
         const savedData = localStorage.getItem(key);
+        console.log(savedData);
+        console.log(localStorage);
         return savedData ? JSON.parse(savedData) : [];
     });
 
@@ -12,7 +14,7 @@ function useLocalStorage(key) {
             const savedData = localStorage.getItem(key);
             setData(savedData ? JSON.parse(savedData) : []);
         };
-
+        console.log(localStorage);
         window.addEventListener('storage', handleStorageChange);
 
         return () => {

@@ -40,15 +40,21 @@ function HeroSection() {
     useEffect(() => {
         if(originalData){
             const dataClone = Array.from(originalData);
+
+            // Filtering the data based on the selected tag
             const filteredByTags = dataClone.filter((single) =>{
                 if(selectedTag==="All")
                     return true
                 else
                     return single.tags.map((tag)=>tag.toUpperCase()).includes(selectedTag.toUpperCase())
             });
+
+            // Filtering the data based on the selected STMember
             const filtered_by_member = filteredByTags.filter((single)=>{
                 return single.stmember === selectedSTMember
             })
+
+            // Filtering the data based on the input value
             const fileted_by_string = filtered_by_member.filter((single)=>{
                 return single.portfolioName.toUpperCase().includes(filterString.toUpperCase()) || single.author.toUpperCase().includes(filterString.toUpperCase())
             })
